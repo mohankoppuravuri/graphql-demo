@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Document </title>
+        <style>
+            body { background-color: #34344A}
+            div { 
+                position: absolute;
+                background-color: #C5D3D2;
+            }
+            container {
+                position: absolute;
+                width: 300px;
+                height: 400px;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%)translateY(-50%);
+            }
+            .head {
+                border-radius: 50%;
+                width: 125px;
+                height: 125px;
+                top: 62.5px;
+                left: 115px;
+            }
+            .face {
+                width: 110px;
+                height: 50px;
+                transform: rotate(-30deg);
+                top: 115px;
+                left: 35px;
+                border-radius: 20% 0% 0% 20% / 50% 0% 0% 50%;
+            }
+            .throat {
+                width: 100px;
+                height: 75px;
+                border-radius: 100%;
+                top: 100px;
+                left: 80px;
+            }
+            .ear {
+                width: 30px;
+                height: 40px;
+                border: 5px solid #34344A;
+                border-bottom-width: 0px;
+                top: 22px;
+                left: 165px;
+                border-top-right-radius: 100%;
+            }
+            .hair {
+                width: 100px;
+                height: 150px;
+                border-radius: 30% 70% 0% 0% / 5% 50% 0% 0%;
+                background-color: transparent;
+                border-top: 20px solid #C5D3D2;
+                border-right: 20px solid #C5D3D2;
+                top: 38px;
+                left: 147px;
+            }
+            .back {
+                width: 100px;
+                height: 175px;
+                left: 140px;
+                top: 125px;
+            }
+            .belly {
+                width: 0;
+                height: 0;
+                background-color: transparent;
+                border-top: 122.5px solid transparent;
+                border-right: 50px solid #C5D3D2;
+                top: 177.5px;
+                left:  91px;
+            }
+            .base-1 {
+                width: 150px;
+                height: 20px;
+                top: 310px;
+                left: 90px;
+                border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+            }
+            .base-2 {
+                height: 0;
+                width: 150px;
+                top: 338px;
+                left: 75px;
+                background-color: transparent;
+                border-bottom: 20px solid #C5D3D2;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+            }
+            .base-3 {
+                width: 180px;
+                height: 20px;
+                top: 365px;
+                left: 75px;
+            }
+            </style>
+            </head>
+            <body>
+                <container>
+                    <div class="back"></div>
+                    <div class="belly"></div>
+                    <div class="head"></div>
+                    <div class="face"></div>
+                    <div class="throat"></div>
+                    <div class="hair"></div>
+                    <div class="ear"></div>
+                    <div class="base-1"></div>
+                    <div class="base-2"></div>
+                    <div class="base-3"></div>
+                </container>
+            </body>
+            </html>
