@@ -1,0 +1,57 @@
+<!-- lang="ar" dir="rtl" -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <body>
+    <div class="wrapper">
+      <div class="a">  </div>
+      <div class="b">  </div>
+      <div class="c">  </div>
+      <div class="d">  </div>
+      <div class="e">  </div>
+      <div class="f">  </div>
+    </div>
+
+    <style>
+        .wrapper{
+          display: grid;
+          grid-template-columns: 100px 10px 100px 10px 100px;
+          grid-template-rows: 100px 10px 100px;
+          /* justify-items: center; */
+        }
+
+        .a {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          background-color:  aqua;
+          border: 1px solid black;
+        }
+        /* 
+        .a {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          background-color: aqua;
+        }
+        */
+        .b {
+          grid-column-start: 3;
+          grid-column-end: 6;
+          grid-row-start: 3;
+          grid-row-end: 4;
+          background-color: aqua;
+        }
+        /* 
+
+        .b {
+          grid-area: 3 / 3 / 4 / 6; // row start / column start / row end / column end
+          background-color: aqua;
+        }
+
+        */
+        .c.d.e.f {
+          border: 1px solid black;
+        }
+    </style>
+  </body>
+</html>

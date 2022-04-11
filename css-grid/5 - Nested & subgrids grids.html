@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adapts to free space</title>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="a item">a</div>
+      <div class="b item">b</div>
+      <div class="c item">c</div>
+      <div class="d item">
+        <div class='e item'> e </div>
+        <div class='f item'> f </div>
+        <div class='g item'> g </div>
+      </div>
+    </div>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 100px minmax(500px, 1fr);
+        grid-template-rows: 100px 1fr 100px;
+        grid-gap: 10px;
+        height: 500px;
+      }
+
+      .item {
+        background-color: yellow;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        font-size: 150%;
+        margin: 5px
+      }
+
+      .a {
+        grid-column: 1;
+        grid-row: 1;
+       
+      }
+      .b {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .c {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .d {
+        grid-column: 2;
+        grid-row: 2;
+
+        display: grid;
+        padding: 5px;
+        margin: 5px;
+        grid-template-columns: subgrid;
+        /* grid-template-columns: 1fr 1fr; */
+
+      }
+ 
+      .g {
+        grid-column: 1 / span 2;
+      }
+    </style>
+  </body>
+</html>
